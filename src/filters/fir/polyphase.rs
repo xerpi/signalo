@@ -12,6 +12,9 @@
 
 pub mod decimator;
 pub mod filter_bank;
+
 pub mod fir;
+#[cfg(all(feature = "alloc", any(feature = "libm", feature = "std")))]
+pub mod fractional_delay;
 pub mod interpolator;
 pub mod rational_resampler;

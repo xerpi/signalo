@@ -22,7 +22,7 @@ pub mod ops;
 
 pub mod rank;
 
-#[cfg(feature = "complex")]
+#[cfg(all(feature = "complex", any(feature = "libm", feature = "std")))]
 pub mod tracking;
 
 pub mod util;

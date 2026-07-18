@@ -22,6 +22,9 @@ pub mod ops;
 
 pub mod rank;
 
+#[cfg(feature = "complex")]
+pub mod tracking;
+
 pub mod util;
 
 pub mod wavelet;
